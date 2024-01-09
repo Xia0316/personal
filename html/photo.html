@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Photo Slideshow</title>
+    <style>
+        body {
+            background-image: url('src/back.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            opacity: 0.8;
+        }
+
+        .slideshow-container {
+            position: relative;
+            max-width: 70%;
+            margin: 0 auto;
+        }
+
+        .slideshow-container img {
+            width: 100%;
+            height: auto;
+            position: absolute;
+            transition: opacity 1s ease-in-out;
+        }
+
+        .fade {
+            opacity: 0;
+        }
+
+        .fade.active {
+            opacity: 1;
+        }
+    </style>
+</head>
+<body>
+    <div class="slideshow-container">
+        <img src="src/1.jpg" class="fade active">
+        <img src="src/.jpg" class="fade">
+        <img src="src/3.jpg" class="fade">
+    </div>
+
+    <script>
+        var slideIndex = 0;
+        showSlides();
+
+        function showSlides() {
+            var i;
+            var slides = document.getElementsByClassName("fade");
+            for (i = 0; i < slides.length; i++) {
+                slides[i].classList.remove("active");
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) {slideIndex = 1}
+            slides[slideIndex-1].classList.add("active");
+            setTimeout(showSlides, 2000); // 切换图片的间隔时间，单位为毫秒
+        }
+    </script>
+</body>
+</html>

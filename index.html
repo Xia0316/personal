@@ -1,0 +1,122 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<title>Peiquan's Homepage</title>
+		<style type="text/css">
+			/* CSS Document */
+			* {
+				margin: 0;
+				padding: 0;
+			}
+
+			a {
+				text-decoration: none;
+			}
+
+			.clearfix:after {
+				content: "";
+				display: block;
+				height: 0;
+				visibility: hidden;
+				clear: both;
+			}
+
+
+
+			body {
+				background: url(src/back.jpg) no-repeat;
+				background-size: cover;
+				background-attachment: fixed;
+			}
+
+			.content {
+				width: 900px;
+				height: 500px;
+				margin: 200px auto 0 auto;
+				border-radius: 10px;
+				background-color: rgba(236, 236, 236, 0.59);
+				transition: all 1.0s;
+				/*box-shadow: 0px 0px 20px rgba(0,0,0,0.3);*/
+			}
+
+			.content img {
+				float: left;
+				width: 200px;
+				height: 200px;
+				margin: 150px 0 0 80px;
+				border-radius: 100px;
+
+			}
+
+			.content:hover {
+				box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.52);
+			}
+
+			.content_r {
+				float: right;
+				width: 500px;
+				margin: 80px 60px 0 0;
+				/*	background-color: pink;*/
+			}
+
+			.content_l {
+				float: left;
+				width: 100%;
+				text-align: center;
+			}
+
+			.content_l h5 {
+
+				font-size: 17px;
+			}
+
+
+
+
+            h1 {
+    text-align: center;
+    color: #333;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: pink;
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.button:hover {
+    background-color: plum;
+}
+
+		</style>
+	</head>
+
+	<body>
+		<div class="content">
+			<img src="src/mimi.png" alt="">
+			<div class="content_r clearfix">
+                <h1>Welcome to my homepage！</h1>
+                <div class="button-container">
+                    <a href="html/xinxi.html" class="button">Personal information</a>
+                    <a href="html/photo.html" class="button">Album</a>
+                    <a href="html/port.html" class="button">My project</a>
+                </div>
+			</div>
+		</div>
+	</body>
+
+</html>
+
